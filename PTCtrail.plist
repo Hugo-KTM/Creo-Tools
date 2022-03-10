@@ -40,6 +40,30 @@
           <string>keyword.PTCtrail</string>
         </dict>
         <dict>
+          <key>begin</key>
+          <string>(\\$)</string>
+          <key>beginCaptures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>punctuation.PTCtrail</string>
+            </dict>
+          </dict>
+          <key>contentName</key>
+          <string>punctuation.PTCtrail</string>
+          <key>end</key>
+          <string>(^ )</string>
+          <key>endCaptures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>punctuation.PTCtrail</string>
+            </dict>
+          </dict>
+        </dict>
+        <dict>
           <key>include</key>
           <string>#numeric</string>
         </dict>
@@ -58,7 +82,7 @@
           <array> 
             <dict>
               <key>include</key>
-              <string>#main__1</string>
+              <string>#main__2</string>
             </dict>
            </array>
           <key>end</key>
@@ -128,7 +152,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(^[\x{0021}\x{003c}\x{0040}].*)</string>
+          <string>(^[\x{0021}\x{003c}\x{0040}\x{003e}].*)</string>
           <key>name</key>
           <string>comment.PTCtrail</string>
         </dict>
@@ -144,19 +168,25 @@
     <dict>
       <key>patterns</key>
       <array> 
-        <dict>
-          <key>include</key>
-          <string>#main</string>
-        </dict>
        </array>
     </dict>
     <key>main__2</key>
     <dict>
       <key>patterns</key>
       <array> 
+        <dict>
+          <key>include</key>
+          <string>#main</string>
+        </dict>
        </array>
     </dict>
     <key>main__3</key>
+    <dict>
+      <key>patterns</key>
+      <array> 
+       </array>
+    </dict>
+    <key>main__4</key>
     <dict>
       <key>patterns</key>
       <array> 
