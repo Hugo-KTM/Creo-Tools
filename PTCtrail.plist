@@ -127,10 +127,6 @@
           </dict>
         </dict>
         <dict>
-          <key>include</key>
-          <string>#multi_line_comment</string>
-        </dict>
-        <dict>
           <key>match</key>
           <string>(^[\x{0021}\x{003c}\x{0040}].*)</string>
           <key>name</key>
@@ -161,42 +157,6 @@
        </array>
     </dict>
     <key>main__3</key>
-    <dict>
-      <key>patterns</key>
-      <array> 
-       </array>
-    </dict>
-    <key>multi_line_comment</key>
-    <dict>
-      <key>patterns</key>
-      <array> 
-        <dict>
-          <key>begin</key>
-          <string>(/\*)</string>
-          <key>beginCaptures</key>
-          <dict>
-            <key>1</key>
-            <dict>
-              <key>name</key>
-              <string>comment.PTCtrail</string>
-            </dict>
-          </dict>
-          <key>contentName</key>
-          <string>comment.PTCtrail</string>
-          <key>end</key>
-          <string>(\*/)</string>
-          <key>endCaptures</key>
-          <dict>
-            <key>1</key>
-            <dict>
-              <key>name</key>
-              <string>comment.PTCtrail</string>
-            </dict>
-          </dict>
-        </dict>
-       </array>
-    </dict>
-    <key>multi_line_comment__1</key>
     <dict>
       <key>patterns</key>
       <array> 
